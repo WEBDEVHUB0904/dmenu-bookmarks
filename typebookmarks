@@ -1,5 +1,6 @@
 #! /bin/sh
 
 # map this script as a shortcut key for dwm in config.h
+# xdootoo is included in most linux repos
 
 xdotool type "$(grep -v '^#' ${HOME}/.snippets | dmenu -i -l 50 | sed 's/\s*#.*//')"
